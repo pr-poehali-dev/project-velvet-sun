@@ -2,70 +2,31 @@ export function Footer() {
   return (
     <footer className="py-16 px-6 lg:px-12 border-t border-border">
       <div className="max-w-7xl mx-auto">
-        <div className="grid md:grid-cols-12 gap-12">
-          {/* Logo & Tagline */}
-          <div className="md:col-span-4">
-            <p className="font-serif text-2xl tracking-wide text-foreground mb-4">Wabi</p>
-            <p className="text-sm text-muted-foreground leading-relaxed">
-              Японский минимализм в сочетании со скандинавским теплом.
-            </p>
-          </div>
-
-          {/* Navigation */}
-          <div className="md:col-span-2 md:col-start-7">
-            <p className="text-xs tracking-widest uppercase text-muted-foreground mb-4">Навигация</p>
-            <nav className="flex flex-col gap-3">
-              <a href="#philosophy" className="text-sm text-foreground hover:text-sage transition-colors">
-                Философия
-              </a>
-              <a href="#services" className="text-sm text-foreground hover:text-sage transition-colors">
-                Услуги
-              </a>
-              <a href="#process" className="text-sm text-foreground hover:text-sage transition-colors">
-                Процесс
-              </a>
-              <a href="#contact" className="text-sm text-foreground hover:text-sage transition-colors">
-                Контакты
-              </a>
-            </nav>
-          </div>
-
-          {/* Social */}
-          <div className="md:col-span-2">
-            <p className="text-xs tracking-widest uppercase text-muted-foreground mb-4">Соцсети</p>
-            <nav className="flex flex-col gap-3">
-              <a href="#" className="text-sm text-foreground hover:text-sage transition-colors">
-                Instagram
-              </a>
-              <a href="#" className="text-sm text-foreground hover:text-sage transition-colors">
-                Pinterest
-              </a>
-              <a href="#" className="text-sm text-foreground hover:text-sage transition-colors">
-                Telegram
-              </a>
-            </nav>
-          </div>
-
-          {/* Legal */}
-          <div className="md:col-span-2">
-            <p className="text-xs tracking-widest uppercase text-muted-foreground mb-4">Документы</p>
-            <nav className="flex flex-col gap-3">
-              <a href="#" className="text-sm text-foreground hover:text-sage transition-colors">
-                Политика
-              </a>
-              <a href="#" className="text-sm text-foreground hover:text-sage transition-colors">
-                Условия
-              </a>
-            </nav>
-          </div>
+        <div className="text-center mb-12">
+          <p className="font-serif text-3xl tracking-wide text-foreground mb-2">Анна &amp; Михаил</p>
+          <p className="text-sm text-muted-foreground tracking-[0.2em] uppercase">14 сентября 2025</p>
         </div>
 
-        {/* Bottom Bar */}
-        <div className="mt-16 pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-xs text-muted-foreground">
-            &copy; {new Date().getFullYear()} Wabi Studio. Все права защищены.
-          </p>
-          <p className="text-xs text-muted-foreground">Создано с намерением</p>
+        <div className="flex flex-col md:flex-row justify-center items-center gap-8 mb-12">
+          <a href="#details" className="text-sm tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors">
+            Детали
+          </a>
+          <span className="hidden md:block text-muted-foreground/30">·</span>
+          <a href="#program" className="text-sm tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors">
+            Программа
+          </a>
+          <span className="hidden md:block text-muted-foreground/30">·</span>
+          <a href="#dresscode" className="text-sm tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors">
+            Дресс-код
+          </a>
+          <span className="hidden md:block text-muted-foreground/30">·</span>
+          <a href="#rsvp" className="text-sm tracking-widest uppercase text-muted-foreground hover:text-foreground transition-colors">
+            RSVP
+          </a>
+        </div>
+
+        <div className="border-t border-border pt-8 text-center">
+          <p className="text-xs text-muted-foreground">С любовью ждём вас · 14.09.2025</p>
         </div>
       </div>
     </footer>
